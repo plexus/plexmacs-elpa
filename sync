@@ -1,0 +1,16 @@
+#!/bin/bash
+
+xargs -0 emacsclient -e <<EOF
+(let ((package-build-working-dir "/tmp/")
+      (package-build-archive-dir "/home/arne/github/plexmacs-elpa/packages/")
+      (package-build-recipes-dir "/home/arne/github/plexmacs-elpa/recipes/")
+      (package-build--recipe-alist-initialized nil))
+  (mapc (lambda (pkg)
+          (package-build-archive (car pkg)))
+        (package-build-recipe-alist))
+  (package-build-dump-archive-contents))
+EOF
+
+git add -A
+git commit -m 'sync'
+git push

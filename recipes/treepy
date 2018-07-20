@@ -1,0 +1,1 @@
+(treepy :fetcher github :repo "volrath/treepy.el" :files ("*.el"))
