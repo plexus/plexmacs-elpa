@@ -6,8 +6,8 @@
 ;; Maintainer:
 ;; Created: Do Jul 19 16:41:25 2018 (+0200)
 ;; Version: 0.1.1
-;; Package-Version: 20180720.1420
-;; Package-Requires: ((ctable "0.1.2"))
+;; Package-Version: 20180720.1456
+;; Package-Requires: ((ctable "0.1.2") (cider "0.17.0"))
 ;; URL:
 ;; Doc URL:
 ;; Keywords:
@@ -44,6 +44,7 @@
 ;;; Code:
 
 (require 'ctable)
+(require 'cider)
 
 (make-variable-buffer-local '*sesman-component*)
 
@@ -83,7 +84,6 @@
         (define-key map (kbd "<up>") 'sesman-table-previous)
         (define-key map (kbd "<down>") 'sesman-table-next)
         (define-key map (kbd "k") 'sesman-table-kill-selected)
-        (define-key map (kbd "q") 'kill-buffer)
         map))
 
 (defun sesman-table-column-model ()
@@ -105,12 +105,18 @@
 
 (defun sesman-table-show ()
   (interactive)
-  (let* ((component (ctbl:create-table-component-buffer :model (sesman-table-model)
-                                                        :custom-map sesman-table-keymap))
-         (buffer (ctbl:cp-get-buffer component)))
+  (let* ((buffer (cider-make-popup-buffer "*sesman-connections*"))
+         (component (ctbl:create-table-component-buffer
+                     :buffer buffer
+                     :model (sesman-table-model)
+                     :custom-map (copy-keymap sesman-table-keymap))))
     (with-current-buffer buffer
-      (setq *sesman-component* component))
-    (pop-to-buffer buffer)))
+      (setq *sesman-component* component)
+      ;; spacemacs hack
+      (mapc (lambda (k)
+              (evil-local-set-key 'normal `[,(car k)] (cdr k)))
+            (cdr sesman-table-keymap)))
+    (cider-popup-buffer-display buffer t)))
 
 (provide 'sesman-table)
 
