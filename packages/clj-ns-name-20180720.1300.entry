@@ -1,0 +1,2 @@
+
+(clj-ns-name . [(20180720 1300) ((emacs (24 4)) (walkclj (0 1 0))) "Rename Clojure buffers to their namespace name" single ((:keywords "languages") (:authors ("Arne Brasseur" . "arne@arnebrasseur.net")) (:maintainer "Arne Brasseur" . "arne@arnebrasseur.net") (:url . "https://github.com/plexus/plexmacs"))])

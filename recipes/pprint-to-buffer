@@ -1,1 +1,1 @@
-(pprint-to-buffer :fetcher github :repo "plexus/plexmacs" :files ("pprint-to-buffer/*")
+(pprint-to-buffer :fetcher github :repo "plexus/plexmacs" :files ("pprint-to-buffer/*"))
