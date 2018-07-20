@@ -6,7 +6,7 @@
 ;; Maintainer:
 ;; Created: Do Jul 19 17:10:31 2018 (+0200)
 ;; Version:
-;; Package-Version: 20180719.1831
+;; Package-Version: 20180720.1429
 ;; Package-Requires: ((cider "0.17.0"))
 ;; Last-Updated:
 ;;           By:
@@ -75,7 +75,7 @@
       (pprint-to-buffer--eval-and-insert (elisp--preceding-sexp))
     (pprint-to-buffer--pop-to-buffer (elisp--preceding-sexp))))
 
-(define-key emacs-lisp-mode-map (kbd "C-c C-p") 'pprint-to-buffer-last-sexp)
+;; (define-key emacs-lisp-mode-map (kbd "C-c C-p") 'pprint-to-buffer-last-sexp)
 
 (provide 'pprint-to-buffer)
 
