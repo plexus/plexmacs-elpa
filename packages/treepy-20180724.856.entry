@@ -1,0 +1,2 @@
+
+(treepy . [(20180724 856) ((emacs (25 1))) "Generic tree traversal tools" single ((:keywords "lisp" "maint" "tools") (:authors ("Daniel Barreto" . "daniel.barreto.n@gmail.com")) (:maintainer "Daniel Barreto" . "daniel.barreto.n@gmail.com") (:url . "https://github.com/volrath/treepy.el"))])
