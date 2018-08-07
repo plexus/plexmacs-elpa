@@ -1,0 +1,2 @@
+
+(sesman-table . [(20180807 1145) ((ctable (0 1 2)) (sesman (0 1 1))) "A handy UI for sesman sessions and links" single ((:authors ("Arne Brasseur")) (:maintainer "Arne Brasseur") (:url . "https://github.com/plexus/plexmacs#sesman-table"))])
