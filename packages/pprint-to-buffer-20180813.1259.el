@@ -5,12 +5,9 @@
 ;; Author: Arne Brasseur
 ;; Maintainer:
 ;; Created: Do Jul 19 17:10:31 2018 (+0200)
-;; Version:
-;; Package-Version: 20180720.1429
+;; Version: 0.1.1
+;; Package-Version: 20180813.1259
 ;; Package-Requires: ((cider "0.17.0"))
-;; Last-Updated:
-;;           By:
-;;     Update #: 0
 ;; URL:
 ;; Doc URL:
 ;; Keywords:
@@ -48,6 +45,8 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
 ;;; Code:
+
+(require 'cider-popup)
 
 (defun pprint-to-buffer--pop-to-buffer (form)
   "Pretty print FORM in popup buffer."
