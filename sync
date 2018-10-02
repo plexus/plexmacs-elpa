@@ -1,6 +1,8 @@
 #!/bin/bash
 
 xargs -0 emacsclient -e <<EOF
+(require 'package-build)
+
 (let ((package-build-working-dir "/tmp/")
       (package-build-archive-dir "/home/arne/github/plexmacs-elpa/packages/")
       (package-build-recipes-dir "/home/arne/github/plexmacs-elpa/recipes/")
