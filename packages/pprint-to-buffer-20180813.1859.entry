@@ -1,0 +1,2 @@
+
+(pprint-to-buffer . [(20180813 1859) ((cider (0 17 0))) "pprint elisp expressions, just like in CIDER" single ((:authors ("Arne Brasseur")) (:maintainer "Arne Brasseur"))])

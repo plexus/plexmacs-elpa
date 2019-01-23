@@ -6,7 +6,7 @@
 ;; Maintainer:
 ;; Created: Do Jul 19 16:41:25 2018 (+0200)
 ;; Version: 0.2.1
-;; Package-Version: 20180816.1044
+;; Package-Version: 20180816.1644
 ;; Package-Requires: ((ctable "0.1.2") (sesman "0.1.1"))
 ;; URL: https://github.com/plexus/plexmacs#sesman-table
 ;; Doc URL:

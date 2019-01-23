@@ -10,7 +10,7 @@
 ;; Copyright (C) 1988 Lynn Randolph Slater, Jr.
 ;; Created: Tue Aug  4 17:06:46 1987
 ;; Version: 0
-;; Package-Version: 20180720.1336
+;; Package-Version: 20180720.1936
 ;; Package-Requires: ()
 ;; Last-Updated: Mon Jan  1 11:51:07 2018 (-0800)
 ;;           By: dradams

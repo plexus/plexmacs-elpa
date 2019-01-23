@@ -1,0 +1,2 @@
+
+(walkclj . [(20180718 1700) ((emacs (25)) (parseclj (0 1 0)) (treepy (0 1 0))) "Manipulate Clojure parse trees" single ((:keywords "languages") (:authors ("Arne Brasseur")) (:maintainer "Arne Brasseur") (:url . "https://github.com/plexus/walkclj"))])

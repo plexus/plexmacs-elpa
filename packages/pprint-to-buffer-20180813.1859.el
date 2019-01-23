@@ -6,7 +6,7 @@
 ;; Maintainer:
 ;; Created: Do Jul 19 17:10:31 2018 (+0200)
 ;; Version: 0.1.1
-;; Package-Version: 20180813.1259
+;; Package-Version: 20180813.1859
 ;; Package-Requires: ((cider "0.17.0"))
 ;; URL:
 ;; Doc URL:
