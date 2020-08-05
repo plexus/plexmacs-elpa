@@ -1,1 +1,0 @@
-(parseclj :fetcher github :repo "clojure-emacs/parseclj" :files ("*.el"))

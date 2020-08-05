@@ -1,1 +1,0 @@
-(sesman-table :fetcher github :repo "plexus/plexmacs" :files ("sesman-table/*"))
